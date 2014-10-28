@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Verify the expression and calculate the value of ALF1: </p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+     var str="ALF = 8 :-)";
+     var str1="ALF1 = 4 + ALF :-)";
+     var t=str.split(":");
+     var v=str1.split(":");
+     x=eval(t[0]);
+     y=eval(v[0]);
+     var resultat=t[0]+"<br>"+v[0]+"<br>"+"The result of the addition is: <br>"+ y;
+if (/(((([a-z|A-Z])(\s[=]\s)))(((\d{4}\s:-[)])|(\d{3}\s:-[)])|(\d{2}\s:-[)])|(\d\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[+]\s)([a-z|A-Z])(\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[-]\s)(\d{4}|\d{3}|\d{2}|\d)(\s:-[)]))|((\d{4}|\d{3}|\d{2}|\d)(\s[*]\s)(\d{4}|\d{3}|\d{2}|\d)(\s:-[)]))))/g.test(str))
+{
+document.getElementById("demo").innerHTML = resultat;}
+else
+{ document.getElementById("demo").innerHTML = "Expresia nu corespunde limbajului ALF";}
+}
+</script>
+
+</body>
+</html>
+
